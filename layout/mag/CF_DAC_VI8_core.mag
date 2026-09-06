@@ -1,0 +1,145 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 0
+<< metal1 >>
+rect 2958 0 3758 212
+rect 0 0 1179 1000
+rect 0 9762 800 10262
+rect 27550 0 27614 104
+rect 30126 0 30190 213
+rect 55284 64689 55348 64718
+rect 49406 0 49606 128
+rect 0 55543 157 55607
+rect 0 55343 157 55407
+rect 0 54655 157 54719
+rect 0 55743 157 55807
+<< metal2 >>
+rect 0 5671 1362 6271
+rect 0 2720 862 3720
+rect 34149 0 34213 70
+rect 34317 0 34445 147
+rect 61530 24228 61594 24356
+rect 34549 0 34613 61
+rect 22118 64518 22182 64718
+rect 0 59215 157 59415
+rect 22718 64615 22782 64718
+rect 22318 64658 22382 64718
+rect 0 1060 1362 1660
+rect 0 3780 811 4380
+rect 61566 27312 61594 27340
+rect 61566 27112 61594 27140
+rect 61566 26912 61594 26940
+rect 61566 26712 61594 26740
+rect 61566 26512 61594 26540
+rect 61361 14771 61514 14835
+rect 27791 64669 27819 64718
+rect 27591 64669 27619 64718
+rect 27391 64669 27419 64718
+rect 27191 64669 27219 64718
+rect 25341 64669 25369 64718
+rect 25141 64669 25169 64718
+rect 24941 64669 24969 64718
+rect 24741 64669 24769 64718
+rect 22518 64658 22582 64718
+rect 61361 13371 61514 13435
+rect 61361 13571 61514 13635
+rect 61361 13771 61514 13835
+rect 61361 13971 61514 14035
+rect 61361 14171 61514 14235
+rect 61361 14371 61514 14435
+rect 61361 14571 61514 14635
+<< labels >>
+rlabel metal1 s 2958 0 3758 212 4 dac_iout_int
+port 1 nsew
+rlabel metal2 s 0 5671 1362 6271 4 vpwra
+port 2 nsew
+rlabel metal2 s 0 2720 862 3720 4 vhv
+port 3 nsew
+rlabel metal1 s 0 0 1179 1000 4 vgnd
+port 4 nsew
+rlabel metal1 s 0 9762 800 10262 4 vnb
+port 5 nsew
+rlabel metal1 s 27550 0 27614 104 4 pd
+port 6 nsew
+rlabel metal1 s 30126 0 30190 213 4 enable_hv
+port 7 nsew
+rlabel metal2 s 34149 0 34213 70 4 current_off
+port 8 nsew
+rlabel metal2 s 34317 0 34445 147 4 vref
+port 9 nsew
+rlabel metal1 s 55284 64689 55348 64718 4 hs
+port 10 nsew
+rlabel metal2 s 61530 24228 61594 24356 4 test_io
+port 11 nsew
+rlabel metal2 s 34549 0 34613 61 4 iref
+port 12 nsew
+rlabel metal1 s 49406 0 49606 128 4 ibias
+port 13 nsew
+rlabel metal2 s 22118 64518 22182 64718 4 dac_vout
+port 14 nsew
+rlabel metal2 s 0 59215 157 59415 4 dac_iout
+port 15 nsew
+rlabel metal1 s 0 55543 157 55607 4 range[1]
+port 16 nsew
+rlabel metal1 s 0 55343 157 55407 4 range[0]
+port 17 nsew
+rlabel metal1 s 0 54655 157 54719 4 mode
+port 18 nsew
+rlabel metal1 s 0 55743 157 55807 4 iout_sel
+port 19 nsew
+rlabel metal2 s 22718 64615 22782 64718 4 enable
+port 20 nsew
+rlabel metal2 s 22318 64658 22382 64718 4 reset
+port 21 nsew
+rlabel metal2 s 0 1060 1362 1660 4 vpwrd
+port 22 nsew
+rlabel metal2 s 0 3780 811 4380 4 vpump
+port 23 nsew
+rlabel metal2 s 61566 27312 61594 27340 4 test_sel[4]
+port 24 nsew
+rlabel metal2 s 61566 27112 61594 27140 4 test_sel[3]
+port 25 nsew
+rlabel metal2 s 61566 26912 61594 26940 4 test_sel[2]
+port 26 nsew
+rlabel metal2 s 61566 26712 61594 26740 4 test_sel[1]
+port 27 nsew
+rlabel metal2 s 61566 26512 61594 26540 4 test_sel[0]
+port 28 nsew
+rlabel metal2 s 61361 14771 61514 14835 4 cal[0]
+port 29 nsew
+rlabel metal2 s 27791 64669 27819 64718 4 data[7]
+port 30 nsew
+rlabel metal2 s 27591 64669 27619 64718 4 data[6]
+port 31 nsew
+rlabel metal2 s 27391 64669 27419 64718 4 data[5]
+port 32 nsew
+rlabel metal2 s 27191 64669 27219 64718 4 data[4]
+port 33 nsew
+rlabel metal2 s 25341 64669 25369 64718 4 data[3]
+port 34 nsew
+rlabel metal2 s 25141 64669 25169 64718 4 data[2]
+port 35 nsew
+rlabel metal2 s 24941 64669 24969 64718 4 data[1]
+port 36 nsew
+rlabel metal2 s 24741 64669 24769 64718 4 data[0]
+port 37 nsew
+rlabel metal2 s 22518 64658 22582 64718 4 clk
+port 38 nsew
+rlabel metal2 s 61361 13371 61514 13435 4 cal[7]
+port 39 nsew
+rlabel metal2 s 61361 13571 61514 13635 4 cal[6]
+port 40 nsew
+rlabel metal2 s 61361 13771 61514 13835 4 cal[5]
+port 41 nsew
+rlabel metal2 s 61361 13971 61514 14035 4 cal[4]
+port 42 nsew
+rlabel metal2 s 61361 14171 61514 14235 4 cal[3]
+port 43 nsew
+rlabel metal2 s 61361 14371 61514 14435 4 cal[2]
+port 44 nsew
+rlabel metal2 s 61361 14571 61514 14635 4 cal[1]
+port 45 nsew
+<< properties >>
+string FIXED_BBOX 0 0 61612 64718
+<< end >>

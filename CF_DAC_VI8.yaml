@@ -1,0 +1,24 @@
+info:
+  name: CF_DAC_VI8
+  description: 8-bit Voltage/Current DAC (CF_DAC_VI8) is a ChipFoundry
+    hard-macro blackbox on SkyWater 130 nm.
+  repo: https://github.com/chipfoundry/CF_DAC_VI8
+  owner: ChipFoundry
+  license: proprietary
+  author: ChipFoundry
+  email: support@chipfoundry.io
+  version: 0.2.0
+  date: 9-6-2026
+  category: analog
+  tags:
+  - CF_DAC_VI8
+  bus: n/a
+  type: hard
+  maturity: Production
+  width: '338.06'
+  height: '353.59'
+  technology: sky130
+  digital_supply_voltage: n/a
+  analog_supply_voltage: n/a
+  clock_freq_mhz: n/a
+  cell_count: '2'

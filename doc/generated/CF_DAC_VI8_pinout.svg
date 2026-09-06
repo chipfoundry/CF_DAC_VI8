@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="506" height="646" viewBox="0 0 506 646">
+<rect width="100%" height="100%" fill="white"/>
+<text x="253" y="22" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#111">CF_DAC_VI8</text>
+<rect x="148" y="48" width="210" height="526" fill="#f7f7f7" stroke="#222" stroke-width="1.5"/>
+<text x="253" y="316" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#333">CF_DAC_VI8</text>
+<line x1="148" y1="69" x2="130" y2="69" stroke="#222" stroke-width="1.25"/>
+<text x="124" y="73" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111">dac_iout_int</text>
+<line x1="148" y1="91" x2="130" y2="91" stroke="#222" stroke-width="1.25"/>
+<text x="124" y="95" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111">dac_iout</text>
+<line x1="148" y1="113" x2="130" y2="113" stroke="#222" stroke-width="1.25"/>
+<text x="124" y="117" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111">dac_vout</text>
+<line x1="148" y1="135" x2="130" y2="135" stroke="#222" stroke-width="1.25"/>
+<text x="124" y="139" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111">ibias</text>
+<line x1="148" y1="157" x2="130" y2="157" stroke="#222" stroke-width="1.25"/>
+<text x="124" y="161" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111">iref</text>
+<line x1="148" y1="179" x2="130" y2="179" stroke="#222" stroke-width="1.25"/>
+<text x="124" y="183" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111">test_io</text>
+<line x1="148" y1="201" x2="130" y2="201" stroke="#222" stroke-width="1.25"/>
+<text x="124" y="205" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111">vhv</text>
+<line x1="148" y1="223" x2="130" y2="223" stroke="#222" stroke-width="1.25"/>
+<text x="124" y="227" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111">cal[7:0]</text>
+<line x1="148" y1="245" x2="130" y2="245" stroke="#222" stroke-width="1.25"/>
+<text x="124" y="249" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111">clk</text>
+<line x1="148" y1="267" x2="130" y2="267" stroke="#222" stroke-width="1.25"/>
+<text x="124" y="271" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111">current_off</text>
+<line x1="148" y1="289" x2="130" y2="289" stroke="#222" stroke-width="1.25"/>
+<text x="124" y="293" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111">data[7:0]</text>
+<line x1="148" y1="311" x2="130" y2="311" stroke="#222" stroke-width="1.25"/>
+<text x="124" y="315" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111">enable</text>
+<line x1="148" y1="333" x2="130" y2="333" stroke="#222" stroke-width="1.25"/>
+<text x="124" y="337" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111">enable_hv</text>
+<line x1="148" y1="355" x2="130" y2="355" stroke="#222" stroke-width="1.25"/>
+<text x="124" y="359" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111">hs</text>
+<line x1="148" y1="377" x2="130" y2="377" stroke="#222" stroke-width="1.25"/>
+<text x="124" y="381" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111">iout_sel</text>
+<line x1="148" y1="399" x2="130" y2="399" stroke="#222" stroke-width="1.25"/>
+<text x="124" y="403" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111">mode</text>
+<line x1="148" y1="421" x2="130" y2="421" stroke="#222" stroke-width="1.25"/>
+<text x="124" y="425" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111">pd</text>
+<line x1="148" y1="443" x2="130" y2="443" stroke="#222" stroke-width="1.25"/>
+<text x="124" y="447" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111">range[1:0]</text>
+<line x1="148" y1="465" x2="130" y2="465" stroke="#222" stroke-width="1.25"/>
+<text x="124" y="469" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111">reset</text>
+<line x1="148" y1="487" x2="130" y2="487" stroke="#222" stroke-width="1.25"/>
+<text x="124" y="491" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111">test_sel[4:0]</text>
+<line x1="148" y1="509" x2="130" y2="509" stroke="#222" stroke-width="1.25"/>
+<text x="124" y="513" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111">vpump</text>
+<line x1="148" y1="531" x2="130" y2="531" stroke="#222" stroke-width="1.25"/>
+<text x="124" y="535" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111">vpwra</text>
+<line x1="148" y1="553" x2="130" y2="553" stroke="#222" stroke-width="1.25"/>
+<text x="124" y="557" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111">vref</text>
+<line x1="160" y1="574" x2="160" y2="588" stroke="#222" stroke-width="1.25"/>
+<text x="160" y="602" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="10" fill="#111">vgnd</text>
+<line x1="346" y1="574" x2="346" y2="588" stroke="#222" stroke-width="1.25"/>
+<text x="346" y="602" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="10" fill="#111">vpwr</text>
+</svg>

@@ -1,0 +1,484 @@
+VERSION 5.8 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+VIA M1M2_C_0
+  VIARULE M1M2_C ;
+  CUTSIZE 0.15 0.15 ;
+  LAYERS met1 via met2 ;
+  CUTSPACING 0.17 0.17 ;
+  ENCLOSURE 0.085 0.085 0.085 0.085 ;
+  ROWCOL 1 1 ;
+END M1M2_C_0
+
+VIA M1M2_C_1
+  VIARULE M1M2_C ;
+  CUTSIZE 0.15 0.15 ;
+  LAYERS met1 via met2 ;
+  CUTSPACING 0.17 0.17 ;
+  ENCLOSURE 0.085 0.085 0.085 0.085 ;
+  ROWCOL 2 1 ;
+END M1M2_C_1
+
+MACRO CF_DAC_VI8_core
+  ORIGIN 0 0 ;
+  FOREIGN CF_DAC_VI8_core 0 0 ;
+  SIZE 308.06 BY 323.59 ;
+  PIN dac_iout_int
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 14.79 0 18.79 1.06 ;
+    END
+  END dac_iout_int
+  PIN vpwra
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 28.355 6.81 31.355 ;
+    END
+  END vpwra
+  PIN vhv
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 13.6 4.31 18.6 ;
+    END
+  END vhv
+  PIN vgnd
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0 0 5.895 5 ;
+    END
+  END vgnd
+  PIN vnb
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0 48.81 4 51.31 ;
+    END
+  END vnb
+  PIN pd
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 137.75 0 138.07 0.52 ;
+    END
+  END pd
+  PIN enable_hv
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 150.63 0 150.95 1.065 ;
+    END
+  END enable_hv
+  PIN current_off
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 170.745 0 171.065 0.35 ;
+    END
+  END current_off
+  PIN vref
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 171.585 0 172.225 0.735 ;
+    END
+  END vref
+  PIN hs
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 276.42 323.445 276.74 323.59 ;
+    END
+  END hs
+  PIN test_io
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 307.65 121.14 307.97 121.78 ;
+    END
+  END test_io
+  PIN iref
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 172.745 0 173.065 0.305 ;
+    END
+  END iref
+  PIN ibias
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 247.03 0 248.03 0.64 ;
+    END
+  END ibias
+  PIN dac_vout
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 110.59 322.59 110.91 323.59 ;
+    END
+  END dac_vout
+  PIN dac_iout
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 296.075 0.785 297.075 ;
+    END
+  END dac_iout
+  PIN range[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0 277.715 0.785 278.035 ;
+    END
+  END range[1]
+  PIN range[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0 276.715 0.785 277.035 ;
+    END
+  END range[0]
+  PIN mode
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0 273.275 0.785 273.595 ;
+    END
+  END mode
+  PIN iout_sel
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0 278.715 0.785 279.035 ;
+    END
+  END iout_sel
+  PIN enable
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 113.59 323.075 113.91 323.59 ;
+    END
+  END enable
+  PIN reset
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 111.59 323.29 111.91 323.59 ;
+    END
+  END reset
+  PIN vpwrd
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 5.3 6.81 8.3 ;
+    END
+  END vpwrd
+  PIN vpump
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 18.9 4.055 21.9 ;
+    END
+  END vpump
+  PIN test_sel[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 307.83 136.56 307.97 136.7 ;
+    END
+  END test_sel[4]
+  PIN test_sel[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 307.83 135.56 307.97 135.7 ;
+    END
+  END test_sel[3]
+  PIN test_sel[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 307.83 134.56 307.97 134.7 ;
+    END
+  END test_sel[2]
+  PIN test_sel[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 307.83 133.56 307.97 133.7 ;
+    END
+  END test_sel[1]
+  PIN test_sel[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 307.83 132.56 307.97 132.7 ;
+    END
+  END test_sel[0]
+  PIN cal[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 306.805 73.855 307.57 74.175 ;
+    END
+  END cal[0]
+  PIN data[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 138.955 323.345 139.095 323.59 ;
+    END
+  END data[7]
+  PIN data[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 137.955 323.345 138.095 323.59 ;
+    END
+  END data[6]
+  PIN data[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 136.955 323.345 137.095 323.59 ;
+    END
+  END data[5]
+  PIN data[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 135.955 323.345 136.095 323.59 ;
+    END
+  END data[4]
+  PIN data[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 126.705 323.345 126.845 323.59 ;
+    END
+  END data[3]
+  PIN data[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 125.705 323.345 125.845 323.59 ;
+    END
+  END data[2]
+  PIN data[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 124.705 323.345 124.845 323.59 ;
+    END
+  END data[1]
+  PIN data[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 123.705 323.345 123.845 323.59 ;
+    END
+  END data[0]
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 112.59 323.29 112.91 323.59 ;
+    END
+  END clk
+  PIN cal[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 306.805 66.855 307.57 67.175 ;
+    END
+  END cal[7]
+  PIN cal[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 306.805 67.855 307.57 68.175 ;
+    END
+  END cal[6]
+  PIN cal[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 306.805 68.855 307.57 69.175 ;
+    END
+  END cal[5]
+  PIN cal[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 306.805 69.855 307.57 70.175 ;
+    END
+  END cal[4]
+  PIN cal[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 306.805 70.855 307.57 71.175 ;
+    END
+  END cal[3]
+  PIN cal[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 306.805 71.855 307.57 72.175 ;
+    END
+  END cal[2]
+  PIN cal[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 306.805 72.855 307.57 73.175 ;
+    END
+  END cal[1]
+  OBS
+    LAYER li1 ;
+      RECT 0 0 308.06 323.59 ;
+    LAYER met1 ;
+      RECT 0 5 0.785 48.81 ;
+      RECT 0 51.31 0.785 273.275 ;
+      RECT 0 273.595 0.785 276.715 ;
+      RECT 0 277.035 0.785 277.715 ;
+      RECT 0 278.035 0.785 278.715 ;
+      RECT 0 279.035 0.785 323.59 ;
+      RECT 0.785 5 4 48.81 ;
+      RECT 0.785 51.31 4 323.59 ;
+      RECT 4 5 5.895 323.59 ;
+      RECT 5.895 0 14.79 323.59 ;
+      RECT 14.79 1.06 18.79 323.59 ;
+      RECT 18.79 0 137.75 323.59 ;
+      RECT 137.75 0.52 138.07 323.59 ;
+      RECT 138.07 0 150.63 323.59 ;
+      RECT 150.63 1.065 150.95 323.59 ;
+      RECT 150.95 0 247.03 323.59 ;
+      RECT 247.03 0.64 248.03 323.59 ;
+      RECT 248.03 0 276.42 323.59 ;
+      RECT 276.42 0 276.74 323.445 ;
+      RECT 276.74 0 308.06 323.59 ;
+    LAYER met2 ;
+      RECT 0 0 0.785 5.3 ;
+      RECT 0 8.3 0.785 13.6 ;
+      RECT 0 18.6 0.785 18.9 ;
+      RECT 0 21.9 0.785 28.355 ;
+      RECT 0 31.355 0.785 296.075 ;
+      RECT 0 297.075 0.785 323.59 ;
+      RECT 0.785 0 4.055 5.3 ;
+      RECT 0.785 8.3 4.055 13.6 ;
+      RECT 0.785 18.6 4.055 18.9 ;
+      RECT 0.785 21.9 4.055 28.355 ;
+      RECT 0.785 31.355 4.055 323.59 ;
+      RECT 4.055 0 4.31 5.3 ;
+      RECT 4.055 8.3 4.31 13.6 ;
+      RECT 4.055 18.6 4.31 28.355 ;
+      RECT 4.055 31.355 4.31 323.59 ;
+      RECT 4.31 0 6.81 5.3 ;
+      RECT 4.31 8.3 6.81 28.355 ;
+      RECT 4.31 31.355 6.81 323.59 ;
+      RECT 6.81 0 110.59 323.59 ;
+      RECT 110.59 0 110.91 322.59 ;
+      RECT 110.91 0 111.59 323.59 ;
+      RECT 111.59 0 111.91 323.29 ;
+      RECT 111.91 0 112.59 323.59 ;
+      RECT 112.59 0 112.91 323.29 ;
+      RECT 112.91 0 113.59 323.59 ;
+      RECT 113.59 0 113.91 323.075 ;
+      RECT 113.91 0 123.705 323.59 ;
+      RECT 123.705 0 123.845 323.345 ;
+      RECT 123.845 0 124.705 323.59 ;
+      RECT 124.705 0 124.845 323.345 ;
+      RECT 124.845 0 125.705 323.59 ;
+      RECT 125.705 0 125.845 323.345 ;
+      RECT 125.845 0 126.705 323.59 ;
+      RECT 126.705 0 126.845 323.345 ;
+      RECT 126.845 0 135.955 323.59 ;
+      RECT 135.955 0 136.095 323.345 ;
+      RECT 136.095 0 136.955 323.59 ;
+      RECT 136.955 0 137.095 323.345 ;
+      RECT 137.095 0 137.955 323.59 ;
+      RECT 137.955 0 138.095 323.345 ;
+      RECT 138.095 0 138.955 323.59 ;
+      RECT 138.955 0 139.095 323.345 ;
+      RECT 139.095 0 170.745 323.59 ;
+      RECT 170.745 0.35 171.065 323.59 ;
+      RECT 171.065 0 171.585 323.59 ;
+      RECT 171.585 0.735 172.225 323.59 ;
+      RECT 172.225 0 172.745 323.59 ;
+      RECT 172.745 0.305 173.065 323.59 ;
+      RECT 173.065 0 306.805 323.59 ;
+      RECT 306.805 0 307.57 66.855 ;
+      RECT 306.805 67.175 307.57 67.855 ;
+      RECT 306.805 68.175 307.57 68.855 ;
+      RECT 306.805 69.175 307.57 69.855 ;
+      RECT 306.805 70.175 307.57 70.855 ;
+      RECT 306.805 71.175 307.57 71.855 ;
+      RECT 306.805 72.175 307.57 72.855 ;
+      RECT 306.805 73.175 307.57 73.855 ;
+      RECT 306.805 74.175 307.57 323.59 ;
+      RECT 307.57 0 307.65 323.59 ;
+      RECT 307.65 0 307.83 121.14 ;
+      RECT 307.65 121.78 307.83 323.59 ;
+      RECT 307.83 0 307.97 121.14 ;
+      RECT 307.83 121.78 307.97 132.56 ;
+      RECT 307.83 132.7 307.97 133.56 ;
+      RECT 307.83 133.7 307.97 134.56 ;
+      RECT 307.83 134.7 307.97 135.56 ;
+      RECT 307.83 135.7 307.97 136.56 ;
+      RECT 307.83 136.7 307.97 323.59 ;
+      RECT 307.97 0 308.06 323.59 ;
+  END
+END CF_DAC_VI8_core
+
+END LIBRARY
