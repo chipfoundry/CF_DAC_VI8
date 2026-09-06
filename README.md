@@ -22,21 +22,25 @@ ports and are routed as signals. Well tap `vnb` is tied inside the wrap.
 
 ```bash
 pip install cf-ipm
-ipm install CF_DAC_VI8 --version 0.2.0 --include-drafts
+ipm install CF_DAC_VI8 --version 0.2.1 --include-drafts
 ```
 
 Until the marketplace listing is published, install from a local catalog
 override:
 
 ```bash
-ipm install CF_DAC_VI8 --version 0.2.0 --include-drafts --local-file ip/catalog.json
+ipm install CF_DAC_VI8 --version 0.2.1 --include-drafts --local-file ip/catalog.json
 ```
 
 Use `hdl/gl/CF_DAC_VI8.v` as the customer blackbox, `layout/lef/CF_DAC_VI8.lef`
 for P&R, and `layout/gds/CF_DAC_VI8.gds` / `layout/mag/CF_DAC_VI8.mag` for the
 public wrap. `CF_DAC_VI8_core` is the analog leaf (empty Verilog, pin-only
 abstract). ChipFoundry substitutes vault GDS into `CF_DAC_VI8_core` at tapeout.
-P&R uses the wrap LEF (`vpwr` / `vgnd` for chip PDN).
+P&R uses the wrap LEF (`vpwr` / `vgnd` for chip PDN). `timing/lib/` is the
+characterized analog view; analog supplies may still appear as Liberty
+`pg_pin`. Functional sim compiles `verify/beh_model/CF_DAC_VI8_core.v`
+**instead of** the empty `hdl/gl/CF_DAC_VI8_core.v` stub. See
+`verify/beh_model/README.md`.
 
 ## Features
 
@@ -45,6 +49,8 @@ P&R uses the wrap LEF (`vpwr` / `vgnd` for chip PDN).
 - Voltage or current mode (`mode`) with full-scale `range[1:0]`
 - Source/sink current modes and `current_off`
 - Calibration bus `cal[7:0]`
+- Characterized Liberty under `timing/lib/` (ff / tt / ss)
+- Ideal Verilog behavioral model under `verify/beh_model/` for functional sim
 - Customer cell `CF_DAC_VI8` 338.06 × 353.59 µm (15 µm halo around analog leaf 308.06 × 323.59 µm)
 - Chip PDN is `vpwr` / `vgnd`. Analog `vpwra` / `vpump` / `vhv` are wrap signal ports.
 
@@ -101,8 +107,26 @@ In OpenLane / LibreLane, hook chip PDN with
 
 ## Limitations and Open Issues
 
-- Verilog in `hdl/gl/CF_DAC_VI8.v` is a structural wrap around an empty
-  `CF_DAC_VI8_core` blackbox, not a SPICE-accurate model.
-- Liberty is not in this first wrap drop. P&R uses the wrap LEF.
+- Verilog in `hdl/gl/CF_DAC_VI8.v` is a structural wrap around
+  `CF_DAC_VI8_core`. P&R uses the empty `hdl/gl` blackbox. Functional sim
+  uses `verify/beh_model/CF_DAC_VI8_core.v` (ideal DAC, not SPICE).
+- Liberty is the STA view for wrap cell `CF_DAC_VI8`. Analog `vpwra` /
+  `vpump` / `vhv` may still be listed as `pg_pin`; P&R uses wrap LEF
+  `USE SIGNAL`.
 - The chip-level integration top with empty public PIN PORTs is not shipped.
   This package is the working analog integration cell.
+
+## Tapeout History
+
+This hard macro has high-volume commercial production history (millions of
+units). Catalog and IPM maturity is Production.
+
+This ChipFoundry SkyWater 130 nm package delivers an abstract for
+integration. ChipFoundry substitutes protected full layout at tapeout.
+The chipIgnite delivery of this package is not marked shuttle-proven until
+a run returns.
+
+| Version | Date | Notes |
+|---|---|---|
+| 0.2.0 | 2026-09-06 | First unpublished wrap draft. Analog leaf `CF_DAC_VI8_core`; customer `CF_DAC_VI8` exposes chip PDN `vpwr`/`vgnd`. |
+| 0.2.1 | 2026-09-06 | Ship characterized Liberty (`timing/lib`) and an ideal Verilog behavioral model (`verify/beh_model`) for functional sim. |
