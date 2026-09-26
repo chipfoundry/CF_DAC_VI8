@@ -2,7 +2,7 @@
 
 > 8-bit Voltage/Current DAC
 
-Draft for designer review. The public GDS is an abstract; ChipFoundry
+The public GDS is an abstract; ChipFoundry
 substitutes protected full geometry at tapeout.
 
 This package ships an SRAM-style PG wrap `CF_DAC_VI8` around analog leaf
@@ -22,14 +22,7 @@ ports and are routed as signals. Well tap `vnb` is tied inside the wrap.
 
 ```bash
 pip install cf-ipm
-ipm install CF_DAC_VI8 --version 0.2.1 --include-drafts
-```
-
-Until the marketplace listing is published, install from a local catalog
-override:
-
-```bash
-ipm install CF_DAC_VI8 --version 0.2.1 --include-drafts --local-file ip/catalog.json
+ipm install CF_DAC_VI8 --version 0.2.2
 ```
 
 Use `hdl/gl/CF_DAC_VI8.v` as the customer blackbox, `layout/lef/CF_DAC_VI8.lef`
@@ -130,3 +123,4 @@ a run returns.
 |---|---|---|
 | 0.2.0 | 2026-09-06 | First unpublished wrap draft. Analog leaf `CF_DAC_VI8_core`; customer `CF_DAC_VI8` exposes chip PDN `vpwr`/`vgnd`. |
 | 0.2.1 | 2026-09-06 | Ship characterized Liberty (`timing/lib`) and an ideal Verilog behavioral model (`verify/beh_model`) for functional sim. |
+| 0.2.2 | 2026-09-26 | Core fill-exclude covers so fillgen does not overwrite the analog. `dac_iout` LEF direction matches the Verilog `inout`. |

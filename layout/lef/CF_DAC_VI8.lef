@@ -41,12 +41,6 @@ MACRO CF_DAC_VI8
         RECT 15 15 21.79 20 ;
       LAYER met3 ;
         RECT 21.31 15 21.79 20 ;
-      LAYER met1 ;
-        RECT 15 63.81 19 66.31 ;
-      LAYER met2 ;
-        RECT 15 63.81 21.79 66.31 ;
-      LAYER met3 ;
-        RECT 21.31 63.81 21.79 66.31 ;
         RECT 1.23 339.09 336.83 342.19 ;
       LAYER met4 ;
         RECT 20 0 23.1 353.59 ;
@@ -135,11 +129,11 @@ MACRO CF_DAC_VI8
     END
   END dac_vout
   PIN dac_iout
-    DIRECTION INPUT ;
+    DIRECTION INOUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 0 311.075 15.785 312.075 ;
+        RECT 0 311.025 15.785 312.125 ;
     END
   END dac_iout
   PIN range[1]
@@ -147,7 +141,7 @@ MACRO CF_DAC_VI8
     USE SIGNAL ;
     PORT
       LAYER met1 ;
-        RECT 0 292.715 15.785 293.035 ;
+        RECT 0 292.665 15.785 293.085 ;
     END
   END range[1]
   PIN range[0]
@@ -155,7 +149,7 @@ MACRO CF_DAC_VI8
     USE SIGNAL ;
     PORT
       LAYER met1 ;
-        RECT 0 291.715 15.785 292.035 ;
+        RECT 0 291.665 15.785 292.085 ;
     END
   END range[0]
   PIN mode
@@ -163,7 +157,7 @@ MACRO CF_DAC_VI8
     USE SIGNAL ;
     PORT
       LAYER met1 ;
-        RECT 0 288.275 15.785 288.595 ;
+        RECT 0 288.225 15.785 288.645 ;
     END
   END mode
   PIN iout_sel
@@ -171,7 +165,7 @@ MACRO CF_DAC_VI8
     USE SIGNAL ;
     PORT
       LAYER met1 ;
-        RECT 0 293.715 15.785 294.035 ;
+        RECT 0 293.665 15.785 294.085 ;
     END
   END iout_sel
   PIN enable
@@ -227,7 +221,7 @@ MACRO CF_DAC_VI8
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 322.83 151.56 338.06 151.7 ;
+        RECT 322.485 151.56 338.06 151.7 ;
     END
   END test_sel[4]
   PIN test_sel[3]
@@ -235,7 +229,7 @@ MACRO CF_DAC_VI8
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 322.83 150.56 338.06 150.7 ;
+        RECT 322.485 150.56 338.06 150.7 ;
     END
   END test_sel[3]
   PIN test_sel[2]
@@ -243,7 +237,7 @@ MACRO CF_DAC_VI8
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 322.83 149.56 338.06 149.7 ;
+        RECT 322.485 149.56 338.06 149.7 ;
     END
   END test_sel[2]
   PIN test_sel[1]
@@ -251,7 +245,7 @@ MACRO CF_DAC_VI8
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 322.83 148.56 338.06 148.7 ;
+        RECT 322.485 148.56 338.06 148.7 ;
     END
   END test_sel[1]
   PIN test_sel[0]
@@ -259,7 +253,7 @@ MACRO CF_DAC_VI8
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 322.83 147.56 338.06 147.7 ;
+        RECT 322.485 147.56 338.06 147.7 ;
     END
   END test_sel[0]
   PIN cal[0]
@@ -402,11 +396,11 @@ MACRO CF_DAC_VI8
     LAYER li1 ;
       RECT 0 0 338.06 353.59 ;
     LAYER met1 ;
-      RECT 0 0 15 288.275 ;
-      RECT 0 288.595 15 291.715 ;
-      RECT 0 292.035 15 292.715 ;
-      RECT 0 293.035 15 293.715 ;
-      RECT 0 294.035 15 353.59 ;
+      RECT 0 0 15 288.225 ;
+      RECT 0 288.645 15 291.665 ;
+      RECT 0 292.085 15 292.665 ;
+      RECT 0 293.085 15 293.665 ;
+      RECT 0 294.085 15 353.59 ;
       RECT 323.06 0 338.06 353.59 ;
       RECT 15 0 29.79 15 ;
       RECT 33.79 0 152.75 15 ;
@@ -419,14 +413,14 @@ MACRO CF_DAC_VI8
       RECT 0 0 6.31 28.6 ;
       RECT 0 33.6 6.31 33.9 ;
       RECT 0 36.9 6.31 43.355 ;
-      RECT 0 46.355 6.31 311.075 ;
-      RECT 0 312.075 6.31 353.59 ;
+      RECT 0 46.355 6.31 311.025 ;
+      RECT 0 312.125 6.31 353.59 ;
       RECT 6.31 0 15 20.3 ;
       RECT 6.31 23.3 15 28.6 ;
       RECT 6.31 33.6 15 33.9 ;
       RECT 6.31 36.9 15 43.355 ;
-      RECT 6.31 46.355 15 311.075 ;
-      RECT 6.31 312.075 15 353.59 ;
+      RECT 6.31 46.355 15 311.025 ;
+      RECT 6.31 312.125 15 353.59 ;
       RECT 323.06 0 338.06 81.855 ;
       RECT 323.06 82.175 338.06 82.855 ;
       RECT 323.06 83.175 338.06 83.855 ;

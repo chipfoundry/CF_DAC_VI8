@@ -137,7 +137,7 @@ MACRO CF_DAC_VI8_core
     END
   END dac_vout
   PIN dac_iout
-    DIRECTION INPUT ;
+    DIRECTION INOUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
